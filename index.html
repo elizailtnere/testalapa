@@ -22,7 +22,22 @@
       font-size: 30px;
       color: rgb(45, 7, 80);
     }
+    #raadaamaissaturs{
+      display: none;
+    }
   </style>
+  <script>
+    function raadiitsaturu(){
+      document.getElementById("raadaamaissaturs").style.display = "block";
+      document.getElementById("pogaraadiit").style.display = "none";
+      document.getElementById("bilde").src = "jaunabilde";
+      document.getElementById("mainas").innerHTML = "mainaamais";
+    }
+    function pasleeptsaturu(){
+      document.getElementById("raadaamaissaturs").style.display = "none";
+      document.getElementById("pogaraadiit").style.display = "block";
+    }
+  </script>
   </head>
 <body>
   <div class="container">
@@ -35,6 +50,11 @@
             <div class="col-9">
               <h5>  dRAUGI, NAV LABI  </h5>
               <p> Tie kuri tagad nomirs no Covida, tiem Ziemmassvētki šogad nebūs</p>
+                <button id="pogaraadiit" onclick="raadiitsaturu()">Rādīt vairāk</button>
+                <div id="raadaamaissaturs">
+              <p> Es svinēju ziemassvētkus, par tevi es nezinu</p>
+                <button onclick="pasleeptsaturu()">Rādīt mazāk</button>
+              </div>
             </div>
           </div>
         </div>
