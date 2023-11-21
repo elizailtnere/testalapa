@@ -30,25 +30,27 @@
     function raadiitsaturu(){
       document.getElementById("raadaamaissaturs").style.display = "block";
       document.getElementById("pogaraadiit").style.display = "none";
-      document.getElementById("bilde").src = "jaunabilde";
-      document.getElementById("mainas").innerHTML = "mainaamais";
+      document.getElementById("mainaas").innerHTML = "Draugi, viss ir labi";
+      document.getElementById("mainaskrasa"). style.color = "orange";
     }
     function pasleeptsaturu(){
       document.getElementById("raadaamaissaturs").style.display = "none";
       document.getElementById("pogaraadiit").style.display = "block";
+      document.getElementById("mainaas").innerHTML = "dRAUGI, NAV LABI";
+      document.getElementById("mainaskrasa"). style.color = "black";
     }
   </script>
   </head>
 <body>
   <div class="container">
-        <h3>Zdarova karova moja ļubimaja un citas </h3>
+        <h3 id="mainaskrasa">DZĪVE IR ĻOTI JAUKA </h3>
         <a href="http://www.rag.lv/">Dzīve dažreiz nav tik skaista</a>
         <div class="container text-center">
           <div class="row">
-            <div class="col-3"><img src='https://www.brides.com/thmb/Vf6h8EcxYuqNjJ9-GOtbFZx-yLk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-preserve-roses-unsplash-june-2023-f9dd34e2dd3e416580295ce9ca524856.jpg'class="rounded-circle"width="200" height="200"> 
+            <div id="bildem" class="col-3"><img src='https://www.brides.com/thmb/Vf6h8EcxYuqNjJ9-GOtbFZx-yLk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-preserve-roses-unsplash-june-2023-f9dd34e2dd3e416580295ce9ca524856.jpg'class="rounded-circle"width="200" height="200"> 
             </div>
             <div class="col-9">
-              <h5>  dRAUGI, NAV LABI  </h5>
+              <h5 id="mainaas">  dRAUGI, NAV LABI  </h5>
               <p> Tie kuri tagad nomirs no Covida, tiem Ziemmassvētki šogad nebūs</p>
                 <button id="pogaraadiit" onclick="raadiitsaturu()">Rādīt vairāk</button>
                 <div id="raadaamaissaturs">
